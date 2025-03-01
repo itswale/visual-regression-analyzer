@@ -11,12 +11,12 @@ from playwright.sync_api import sync_playwright
 import os
 import subprocess
 
-# Ensure Playwright browsers are installed
+# Ensure Playwright browsers are installed without Streamlit commands
 playwright_dir = os.path.expanduser("~/.cache/ms-playwright")
 if not os.path.exists(playwright_dir) or not os.listdir(playwright_dir):
-    st.write("Installing Playwright browsers...")
+    print("Installing Playwright browsers...")  # Use print instead of st.write
     subprocess.run(["playwright", "install", "chromium"], check=True)
-    st.write("Browsers installed!")
+    print("Browsers installed!")
 
 # ========== Configuration ==========
 COLORS = {
