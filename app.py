@@ -69,15 +69,17 @@ def compare_images(baseline_img, new_img, tolerance=50):
         st.error(f"Image processing error: {str(e)}")
         return None, None, None
 
-def capture_screenshot(url, width=1280, height=720):  # Unchanged
+def capture_screenshot(url, width=1280, height=720):
     try:
         with sync_playwright() as p:
+            st.write("Launching browser...")  # Debug
             browser = p.chromium.launch(headless=True)
             page = browser.new_page()
             page.set_viewport_size({"width": width, "height": height})
             page.goto(url, wait_until="networkidle")
             screenshot_bytes = page.screenshot(full_page=False)
             browser.close()
+            st.write("Screenshot captured successfully!")  # Debug
             return Image.open(BytesIO(screenshot_bytes))
     except Exception as e:
         st.error(f"Screenshot capture failed: {str(e)}")
