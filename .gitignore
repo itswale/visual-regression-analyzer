@@ -1,0 +1,31 @@
+# Python virtual environments
+venv/
+env/
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Local development files
+*.log
+*.pid
+*.swp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Playwright browser binaries
+playwright/
+.playwright/
+
+# Custom additions
+test_output/      # Ignore a test output folder
+*.csv            # Ignore CSV files
