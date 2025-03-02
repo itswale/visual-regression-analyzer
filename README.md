@@ -21,7 +21,7 @@ A Streamlit-based tool for comparing images (e.g., UI screenshots) to detect vis
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/visual-regression-analyzer.git
+   git clone https://github.com/itswale/visual-regression-analyzer.git
    cd visual-regression-analyzer
    ```
 
