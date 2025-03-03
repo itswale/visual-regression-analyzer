@@ -1,4 +1,5 @@
 ```markdown
+   ```
 # Visual Regression Analyzer
 
 A Streamlit-based tool for comparing images (e.g., UI screenshots) to detect visual differences, tailored for QA testers and developers. Upload a baseline image and a new version—or capture a screenshot from a URL—and get a detailed analysis with a difference percentage, highlighted changes, and a heatmap.
@@ -23,7 +24,6 @@ A Streamlit-based tool for comparing images (e.g., UI screenshots) to detect vis
    ```bash
    git clone https://github.com/itswale/visual-regression-analyzer.git
    cd visual-regression-analyzer
-   ```
 
 2. **Set Up a Virtual Environment (Recommended)**:
    ```bash
